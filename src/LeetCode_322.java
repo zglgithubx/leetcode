@@ -15,10 +15,10 @@ import java.util.Arrays;
  * @Author zhuguangliang
  * @Date 2021/09/16 21:48
  **/
-public class No322 {
+public class LeetCode_322 {
     public static void main(String[] args) {
         long start=System.currentTimeMillis();
-        int[] coins={1,2,5,7,10};
+        int[] coins={2,5,7,10};
         int amount=14;
         System.out.println(coinChange1(coins,amount));
         long end=System.currentTimeMillis();
@@ -68,8 +68,8 @@ public class No322 {
         //创建用来存储0到目标数值的数组，长度为amount+1
         int[] amounts=new int[amount+1];
         //将数组用amount+1填满所有，作为所有每种情况的最大值
-        Arrays.fill(amounts,amount+1);
-        //将第一种情况目标金额为0的时候，结果0
+                Arrays.fill(amounts,amount+1);
+        //        //将第一种情况目标金额为0的时候，结果0
         amounts[0]=0;
         //外层for循环遍历所有状态的所有取值。
         for(int i=0;i<amounts.length;i++){
@@ -79,6 +79,7 @@ public class No322 {
                 if(i-coin<0){
                     continue;
                 }
+                //amounts[i-coin]+1的目的是，如果刚好有一枚硬币可以组合成该金额，这种情况的结果为1
                 amounts[i]=Math.min(amounts[i],1+amounts[i-coin]);
             }
         }
