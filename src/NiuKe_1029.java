@@ -24,7 +24,6 @@ import java.util.*;
 public class NiuKe_1029 {
 
     public void back1(int index, int k,int[] nums,Stack<Integer> re, List<Integer> res){
-
         if(index==k){
             int x=0;
             for(int i:re){
@@ -80,16 +79,6 @@ public class NiuKe_1029 {
                 back3(index+1,k,nums,re,i+1);
                 re.push(re.pop()-nums[i]);
             }
-        }
-    }
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        // 注意 hasNext 和 hasNextLine 的区别
-        while (in.hasNextInt()) { // 注意 while 处理多个 case
-            int a = in.nextInt();
-            int b = in.nextInt();
-            System.out.println(a + b);
         }
     }
 }
