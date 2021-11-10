@@ -1,6 +1,6 @@
 /**
  * @ClassName LeetCode_567
- * @Description TODO
+ * @Description TODO 待回顾
  * @Author ZhuGuangLiang
  * @Date 2021/11/09 17:42
  */
@@ -11,7 +11,9 @@ public class LeetCode_567 {
         if(s2Len<s1Len){
             return false;
         }
+        //记录字符串s1的字符频数和种类
         int[] s1Freq=new int[26];
+        //记录窗口内的字符串的频数和种类
         int[] window=new int[26];
         int s1Sort=0;
         for(char c:s1.toCharArray()){
@@ -38,7 +40,9 @@ public class LeetCode_567 {
                     return true;
                 }
                 char d=s2.charAt(left);
+                //当s1含有此字符时，窗口中必含有此字符
                 if(s1Freq[d-'a']>0){
+                    //此步需要缩小窗口
                     window[d-'a']--;
                     if(window[d-'a']<s1Freq[d-'a']){
                         distance--;
