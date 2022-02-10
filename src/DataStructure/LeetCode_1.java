@@ -11,8 +11,8 @@ import java.util.Map;
 public class LeetCode_1 {
 	/**
 	 * @Author ZhuGuangLiang <786945363@qq.com>
-	 * @Description 用map去存储值和下标，key为值，value为数组下标，遍历整个数组，找到与当前元素和等于目标值得元素，如果没有，则把当前的元素天添加到map中 
-	 * @Date 2022/02/10 10:17 
+	 * @Description 用map去存储值和下标，key为值，value为数组下标，遍历整个数组，找到与当前元素和等于目标值得元素，如果没有，则把当前的元素天添加到map中
+	 * @Date 2022/02/10 10:17
 	 * @Param [nums, target]
 	 * @return int[]
 	 */
@@ -27,5 +27,4 @@ public class LeetCode_1 {
 		}
 		return new int[0];
 	}
-
 }
