@@ -37,6 +37,7 @@ public class LeetCode_118 {
 			result.add(nums);
 
 		}
+
 		return result;
 	}
 
