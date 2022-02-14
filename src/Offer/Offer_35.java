@@ -35,8 +35,6 @@ public class Offer_35 {
 			cur=cur.next;
 		}
 		return map.get(head);
-
-
 	}
 }
 class Node {
