@@ -1,4 +1,4 @@
-package Offer;
+package offer;
 
 import java.util.HashMap;
 

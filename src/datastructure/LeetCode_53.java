@@ -1,4 +1,4 @@
-package DataStructure;
+package datastructure;
 
 /**
  * @ClassName LeetCode_53
@@ -28,7 +28,7 @@ public class LeetCode_53 {
 	/**
 	 * @Author ZhuGuangLiang <786945363@qq.com>
 	 * @Description 动态规划解法，记录前一步的最大值，累加到遍历结束
-	 * @Date 2022/02/10 08:56 
+	 * @Date 2022/02/10 08:56
 	 * @Param [nums]
 	 * @return int
 	 */

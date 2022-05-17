@@ -1,4 +1,4 @@
-package DataStructure;
+package datastructure;
 /**
  * @ClassName LeetCode_141
  * @Author ZhuGuangLiang <786945363@qq.com>

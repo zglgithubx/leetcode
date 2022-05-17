@@ -1,4 +1,4 @@
-package DataStructure;
+package datastructure;
 
 /**
  * @ClassName LeetCode_19
@@ -52,7 +52,7 @@ class ListNode{
 	public ListNode(int val){
 		this.val = val;
 	}
-	public ListNode(int val, DataStructure.ListNode node){
+	public ListNode(int val, datastructure.ListNode node){
 		this.val = val;
 		this.next=node;
 	}

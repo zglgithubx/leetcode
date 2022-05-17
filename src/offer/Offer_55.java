@@ -1,4 +1,4 @@
-package Offer;
+package offer;
 
 /**
  * @ClassName Offer_55

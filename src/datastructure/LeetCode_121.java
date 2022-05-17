@@ -1,4 +1,4 @@
-package DataStructure;
+package datastructure;
 
 /**
  * @ClassName LeetCode_121

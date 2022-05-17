@@ -1,4 +1,4 @@
-package Offer;
+package offer;
 
 import java.util.Stack;
 
@@ -19,7 +19,7 @@ public class Offer_30 {
 	/**
 	 * @Author ZhuGuangLiang <786945363@qq.com>
 	 * @Description A栈放入所有元素，B栈降序放入元素，当发现元素比之前大，则复制一份B栈中栈顶元素
-	 * @Date 2022/02/11 20:35 
+	 * @Date 2022/02/11 20:35
 	 * @Param [x]
 	 * @return void
 	 */
