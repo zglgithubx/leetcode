@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+
 public class LeetCode_49 {
 	//给你一个字符串数组，请你将 字母异位词 组合在一起。可以按任意顺序返回结果列表。
 	//字母异位词 是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母通常恰好只用一次。
@@ -14,6 +12,7 @@ public class LeetCode_49 {
 
 	//输入: strs = ["a"]
 	//输出: [["a"]]
+
 	public List<Character> sortChar(List<Character> chars){
 		if(chars.size()==1){
 			return chars;
@@ -63,14 +62,39 @@ public class LeetCode_49 {
 		}
 		return res1;
 	}
+
+	public List<List<String>> groupAnagrams(String[] strs) {
+		String[] newStr=new String[strs.length];
+		for(int i=0;i<strs.length;i++){
+			char[] chars = strs[i].toCharArray();
+			int[] charCount=new int[26];
+			for(char c:chars){
+				int cur=charCount[c-97];
+				cur++;
+				charCount[c-97]=cur;
+			}
+			newStr[i]= Arrays.toString(charCount);
+		}
+		Map<String,List<String>> resMap=new HashMap<>();
+		for(int i=0;i<newStr.length;i++){
+			List<String> list;
+			if(resMap.containsKey(newStr[i])){
+				list=resMap.get(newStr[i]);
+				list.add(strs[i]);
+			}else {
+				list=new ArrayList<>();
+				list.add(strs[i]);
+			}
+			resMap.put(newStr[i],list);
+		}
+		return (List<List<String>>) resMap.values();
+
+	}
+	//思路：创建一个map集合，存储每个单词，转成字符串存到新的字符串数组中，然后再将字符串添加到sort中
 	public static void main(String[] args) {
 		String[] strings={"eat", "tea", "tan", "ate", "nat", "bat"};
-		String[][] test = new LeetCode_49().test(strings);
-		for(String[] strings1:test){
-			for(String string:strings1){
-				System.out.print(string+",");
-			}
-		}
+
+
 	}
 }
 

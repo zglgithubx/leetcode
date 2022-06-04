@@ -9,7 +9,6 @@ import java.util.Arrays;
  */
 public class MergeSort {
 
-
 	static void mergeSort(int[] arr,int[] reg,int start,int end){
 		if (start>=end){
 			return;
@@ -33,8 +32,6 @@ public class MergeSort {
 			arr[k]=reg[k];
 		}
 	}
-
-
 
 	public static void main(String[] args) {
 		int[] ins={4,1,3,5,6,2};

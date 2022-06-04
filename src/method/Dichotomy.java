@@ -33,33 +33,12 @@ public class Dichotomy {
         }
         return left;
     }
-    /*
-     * @Author ZhuGuangLiang
-     * @Description 此法可以寻找中最后一次匹配到目标的索引
-     * @Date 15:38 2021/10/14
-     * @Param [nums, target]
-     * @return int
-     **/
-    int binarySearchRight(int[] nums,int target){
-        int left=0,right=nums.length;
-        while(left<right){
-            int mid=left+(right-left)/2;
-            //如果匹配到目标，左边界向右移动，
-            if(nums[mid]==target){
-                left=mid+1;
-            }else if(nums[mid]>target){
-                right=mid;
-            }else if(nums[mid]<target){
-                left=mid+1;
-            }
-        }
-        return left;
-    }
+
 
 
     public static void main(String[] args) {
-        int[] nums={1,1,1,2,2,2,3};
-        int target=2;
+        int[] nums={5,7,7,8,8,10};
+        int target=8;
         int result=new Dichotomy().binarySearchLeft(nums,target);
         System.out.println(result);
     }
