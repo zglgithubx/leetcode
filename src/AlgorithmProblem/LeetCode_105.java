@@ -1,7 +1,9 @@
+package AlgorithmProblem;
+
 import java.util.Arrays;
 
 /**
- * @ClassName LeetCode_105
+ * @ClassName AlgorithmProblem.LeetCode_105
  * @Author ZhuGuangLiang <786945363@qq.com>
  * @Date 2022/06/07 09:09
  */

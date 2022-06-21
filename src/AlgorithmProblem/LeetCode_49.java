@@ -1,3 +1,5 @@
+package AlgorithmProblem;
+
 import java.util.*;
 
 public class LeetCode_49 {

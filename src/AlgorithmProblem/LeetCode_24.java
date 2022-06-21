@@ -1,5 +1,7 @@
+package AlgorithmProblem;
+
 /**
- * @ClassName LeetCode_24
+ * @ClassName AlgorithmProblem.LeetCode_24
  * @Author ZhuGuangLiang <786945363@qq.com>
  * @Date 2022/06/21 09:15
  * 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。
@@ -13,7 +15,7 @@ public class LeetCode_24 {
 	 * 函数内：将 2 指向 1，1 指向下一层的递归函数，最后返回节点 2
 	 * @Date 2022/06/21 09:16
 	 * @Param [head]
-	 * @return ListNode
+	 * @return AlgorithmProblem.ListNode
 	 */
 	public ListNode swapPairs(ListNode head) {
 		//判断是否终止
@@ -38,7 +40,7 @@ public class LeetCode_24 {
 	 * 返回虚拟头结点的下一个节点
 	 * @Date 2022/06/21 09:19
 	 * @Param [head]
-	 * @return ListNode
+	 * @return AlgorithmProblem.ListNode
 	 */
 	public ListNode swapPairs1(ListNode head) {
 		//创建虚拟头节点0

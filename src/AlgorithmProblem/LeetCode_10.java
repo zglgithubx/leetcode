@@ -1,5 +1,7 @@
+package AlgorithmProblem;
+
 /**
- * @ClassName LeetCode_10
+ * @ClassName AlgorithmProblem.LeetCode_10
  * @Author ZhuGuangLiang <786945363@qq.com>
  * @Date 2022/06/02 22:20
  */

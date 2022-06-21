@@ -1,8 +1,10 @@
+package AlgorithmProblem;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @ClassName LeetCode_34
+ * @ClassName AlgorithmProblem.LeetCode_34
  * @Author ZhuGuangLiang <786945363@qq.com>
  * @Date 2022/06/01 09:56
  */
