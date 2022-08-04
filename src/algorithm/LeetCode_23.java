@@ -39,4 +39,8 @@ public class LeetCode_23 {
 		tail.next = (aTail != null ? aTail : bTail);
 		return head.next;
 	}
+
+	public static void main(String[] args) {
+
+	}
 }
