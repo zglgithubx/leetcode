@@ -10,10 +10,8 @@ import java.util.List;
  */
 public class LeetCode_486 {
 	public static void main(String[] args) {
-		int[] nums={2,4,55,6,8};
-		boolean b=new LeetCode_486().PredictTheWinner(nums);
-		System.out.println(b);
-
+		int x=2<<3;
+		System.out.println(x);
 	}
 	public boolean PredictTheWinner(int[] nums) {
 		List<Integer> list=new ArrayList<>();
