@@ -42,5 +42,13 @@ public class Dichotomy {
         int result=new Dichotomy().binarySearchLeft(nums,target);
         System.out.println(result);
     }
+    public void test(){
+
+    }
 
 }
+
+
+
+
+
